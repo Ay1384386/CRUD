@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atomic+Age&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CRUDS..JS/js/all.min.css" />
+    <link rel="stylesheet" href="../CRUDS..JS/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../CRUDS..JS/css/style.css" />
+    <title>CARD</title>
+  </head>
+
+  <body class="body">
+    <div class="container">
+      <div class="w-75 mx-auto py-5">
+        <h1 class="text">Product manangment system</h1>
+        <div class="form-group mb-3">
+          <label for="productname" class="mb-3 labol"> product name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="productname"
+            placeholder="Enter name"
+          />
+        </div>
+        <div class="form-group mb-3">
+          <label for="productprice" class="mb-3 labol"> product price</label>
+          <input
+            type="number"
+            class="form-control"
+            id="productprice"
+            placeholder="Enter name"
+          />
+        </div>
+        <div class="form-group mb-3">
+          <label for="productmodel" class="mb-3 labol"> product model</label>
+          <input
+            type="text"
+            class="form-control"
+            id="productmodel"
+            placeholder="Enter name"
+          />
+        </div>
+        <div class="form-group mb-3">
+          <label for="productDecs" class="mb-3 labol"> product Desc</label>
+          <textarea
+            name="productDecs"
+            id="productDecs"
+            class="form-control"
+          ></textarea>
+        </div>
+        <button
+          id="addbtn"
+          onclick="addProduct()"
+          class="btn btn-success w-75 mx-5 p-3"
+        >
+          ADD PRODUCT
+        </button>
+        <button
+          id="upload"
+          class="btn btn-primary w-75 d-none"
+          onclick="uploadproduct()"
+        >
+          UP LOAD
+        </button>
+      </div>
+
+      <div class="w-75 m-auto py-2">
+        <h3 class="mx-5 w-75 sec">Search</h3>
+        <input
+          id=" searcinput"
+          oninput="searchName()"
+          type="text"
+          class="form-control mx-auto w-75"
+          placeholder="Search"
+        />
+      </div>
+      <table class="table  table-success  text-center mx-auto w-75 table-bordered table  ">
+        <thead >
+          <th>index</th>
+          <th>productname</th>
+          <th>productprice</th>
+          <th>productmodel</th>
+          <th>productDecs</th>
+          <th>updata</th>
+          <th>Delete</th>
+        </thead>
+
+        <tbody id="tbady"></tbody>
+      </table>
+    </div>
+
+    <script src="../CRUDS..JS/js/index.js"></script>
+  </body>
+</html>

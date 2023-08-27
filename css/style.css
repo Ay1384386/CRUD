@@ -1,0 +1,36 @@
+textarea{
+    resize: none;
+}
+body{
+background-color: black;
+color: aliceblue;
+}
+.body{
+    background-image: url(../img/backiee-265883.jpg);
+    height: 100vh;
+    background-size: cover;
+
+}
+.img{
+    width: 100%;
+}
+h1{
+    font-family: 'Atomic Age', cursive;
+    font-size: 50px;
+    font-weight: 900;
+    color: rgb(32, 218, 212);
+    text-align: center;
+}
+ .labol{
+    font-family: 'Yatra One', cursive;
+    font-size: 30px;
+    color: rgb(80, 242, 212);
+ }
+ .sec{
+    font-family: 'Yatra One', cursive;
+    font-size: 30px;
+    color: rgb(223, 242, 80);
+    text-align: center;
+ }
+
+  
